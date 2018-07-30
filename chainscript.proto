@@ -50,7 +50,7 @@ message SegmentMeta {
 // immutable ordering of your process' steps.
 message Evidence {
     // Version of the evidence format.
-    uint32 version = 1;
+    string version = 1;
 
     // Identifier of the evidence type.
     // For example, in the case of a timestamp on the Bitcoin blockchain,
@@ -72,7 +72,7 @@ message Evidence {
 // A link contains all the data that represents a process' step.
 message Link {
     // Version of the link format.
-    uint32 version = 1;
+    string version = 1;
 
     // Data representing the process' step details.
     // For backwards compatibility, you should update the link version
@@ -149,7 +149,7 @@ message LinkReference {
 // protobuf-encoded bytes.
 message Signature {
     // Version of the signature format.
-    uint32 version = 1;
+    string version = 1;
     // Signature algorithm used (for example, "EdDSA").
     string type = 2;
 

@@ -81,7 +81,7 @@ message Link {
     LinkMeta meta = 2;
 
     // (Optional) Signatures of configurable parts of the link.
-    repeated Signature signatures = 20;
+    repeated Signature signatures = 10;
 }
 
 // A process represents a real-world process that is shared between multiple

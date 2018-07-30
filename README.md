@@ -1,5 +1,7 @@
 # ChainScript
 
+[![build status](https://travis-ci.org/stratumn/chainscript.svg?branch=master)](https://travis-ci.org/stratumn/chainscript)
+
 ChainScript is an open standard for representing Proof of Process data.
 
 Proof of Process is a protocol that allows partners to follow the execution of

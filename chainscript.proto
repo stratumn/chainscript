@@ -124,7 +124,7 @@ message LinkMeta {
     string action = 30;
     // (Optional) Step of the process that results from the action.
     // Can be used to help deserialize link data or filter link search results.
-    string set = 31;
+    string step = 31;
     // (Optional) Tags that can be used to filter link search results.
     repeated string tags = 32;
 

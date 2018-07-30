@@ -74,10 +74,10 @@ message Link {
     // Version of the link format.
     uint32 version = 1;
 
-    // State representing the process' step details.
+    // Data representing the process' step details.
     // For backwards compatibility, you should update the link version
-    // when the structure of this state changes.
-    bytes state = 10;
+    // when the structure/encoding of this field changes.
+    bytes data = 10;
 
     // Metadata associated to the process' step.
     // Some of this metadata is used to provide filtering options when
@@ -86,6 +86,16 @@ message Link {
 
     // (Optional) Signatures of configurable parts of the link.
     repeated Signature signatures = 30;
+}
+
+// A process represents a real-world process that is shared between multiple
+// independent actors.
+message Process {
+    // The name of the process.
+    string name = 1;
+
+    // The current state of the process.
+    string state = 10;
 }
 
 // Metadata associated to a process' step.
@@ -100,7 +110,7 @@ message LinkMeta {
     repeated LinkReference refs = 3;
 
     // A link is a step in a given process.
-    string process = 10;
+    Process process = 10;
     // A link always belongs to a specific map in that process.
     // A map is an instance of a process.
     string map_id = 11;
@@ -108,11 +118,16 @@ message LinkMeta {
     // (Optional) Action in the process that resulted in the link's creation.
     // Can be used to filter link search results.
     string action = 20;
-    // (Optional) Type of link.
-    // Can be used to help deserialize the state or filter link search results.
-    string type = 21;
+    // (Optional) Type of the link's data.
+    // Can be used to help deserialize link data or filter link search results.
+    string data_type = 21;
     // (Optional) Tags that can be used to filter link search results.
     repeated string tags = 22;
+
+    // The Client ID should be set by the client code creating the link.
+    // Use a unique ID that easily identifies your library, for example the
+    // github url of your repository.
+    string client_id = 30;
 
     // (Optional) Additional metadata needed by your business logic.
     // For backwards compatibility, you should update the link version when the

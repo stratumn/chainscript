@@ -1,6 +1,8 @@
 language: go
 go:
   - "1.10"
+before_install:
+  - sudo apt-get install -y protobuf
 install:
   - go get -u github.com/golang/protobuf/protoc-gen-go
 script:

@@ -122,9 +122,9 @@ message LinkMeta {
     // (Optional) Action in the process that resulted in the link's creation.
     // Can be used to filter link search results.
     string action = 30;
-    // (Optional) Type of the link's data.
+    // (Optional) Step of the process that results from the action.
     // Can be used to help deserialize link data or filter link search results.
-    string data_type = 31;
+    string set = 31;
     // (Optional) Tags that can be used to filter link search results.
     repeated string tags = 32;
 

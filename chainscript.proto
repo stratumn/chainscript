@@ -150,8 +150,6 @@ message LinkReference {
 message Signature {
     // Version of the signature format.
     string version = 1;
-    // Signature algorithm used (for example, "EdDSA").
-    string type = 2;
 
     // A description of the parts of the links that are signed.
     // This should unambiguously let the verifier recompute the signed payload

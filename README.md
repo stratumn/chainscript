@@ -11,6 +11,10 @@ process.
 
 Learn more [here](https://proofofprocess.org/).
 
+## Documentation
+
+To learn what you can do with ChainScript, please go to the [documentation](doc/README.md).
+
 ## How to use
 
 ChainScript is defined with [protobuf](https://developers.google.com/protocol-buffers/)
@@ -35,8 +39,8 @@ projects:
 
 | Language   | Repository                                 | Status |
 | ---------- | ------------------------------------------ | ------ |
-| Golang     | https://github.com/stratumn/go-chainscript | 1.0.0  |
-| Javascript | https://github.com/stratumn/js-chainscript | 1.0.0  |
+| Golang     | https://github.com/stratumn/go-chainscript | 1.x.x  |
+| Javascript | https://github.com/stratumn/js-chainscript | 1.x.x  |
 
 ## Testing
 

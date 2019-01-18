@@ -11,6 +11,10 @@ process.
 
 Learn more [here](https://proofofprocess.org/).
 
+## Documentation
+
+To learn what you can do with ChainScript, please go to the [documentation](doc/README.md).
+
 ## How to use
 
 ChainScript is defined with [protobuf](https://developers.google.com/protocol-buffers/)

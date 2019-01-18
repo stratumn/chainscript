@@ -35,8 +35,8 @@ projects:
 
 | Language   | Repository                                 | Status |
 | ---------- | ------------------------------------------ | ------ |
-| Golang     | https://github.com/stratumn/go-chainscript | 1.0.0  |
-| Javascript | https://github.com/stratumn/js-chainscript | 1.0.0  |
+| Golang     | https://github.com/stratumn/go-chainscript | 1.x.x  |
+| Javascript | https://github.com/stratumn/js-chainscript | 1.x.x  |
 
 ## Testing
 
